@@ -41,6 +41,7 @@ import Home from './Component/Home'
 import About from './Component/About'
 import Contact from './Component/Contact'
 import Product from './Component/Product'
+import Untitled from './assets/img/Untitled.jpeg'
 
 
 function App(){
@@ -56,6 +57,9 @@ function App(){
       
 
       </Route>
+      <a href="" target="_blank">
+          <img src={Untitled} className="Img react" alt="React img" />
+      </a>
     </Routes>
     </BrowserRouter>
     </>
