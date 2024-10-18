@@ -34,34 +34,29 @@
 
 // export default App
 
-
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Layout from './Component/Layout'
-import Home from './Component/Home'
-import About from './Component/About'
-import Contact from './Component/Contact'
-import Product from './Component/Product'
-import Untitled from './assets/img/Untitled.jpeg'
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Layout from './Component/Layout';
+import Home from './Component/Home';
+import Contact from './Component/Contact';
+import About from './Component/About';
+import Product from './Component/Product';
 
 
-function App(){
-  return(
+function App() {
+  return (
     <>
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Layout/>}>
       <Route index element={<Home/>}/>
+      <Route path="contact" element={<Contact/>}/>
       <Route path="About" element={<About/>}/>
-      <Route path="Contact" element={<Contact/>}/>
       <Route path="Product" element={<Product/>}/>
       
-
       </Route>
-      <a href="" target="_blank">
-          <img src={Untitled} className="Img react" alt="React img" />
-      </a>
     </Routes>
     </BrowserRouter>
+      
     </>
   )
 }

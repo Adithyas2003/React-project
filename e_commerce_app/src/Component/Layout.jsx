@@ -1,6 +1,9 @@
 import {Link,Outlet} from "react-router-dom"
 
-function Layout(){
+const Layout=()=>{
+    const handleClick=()=>{
+        window.location.reload();
+    }
     return(
         <>
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -12,7 +15,7 @@ function Layout(){
             <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                <Link to="/" className="nav-link" >Home </Link> 
+                <Link to="/" className="nav-link" onclick= {handleClick}>Home </Link> 
                 </li>
                 <li className="nav-item">
                 <Link to="/Contact" className="nav-link">About</Link>
