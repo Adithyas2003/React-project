@@ -1,4 +1,4 @@
-import { StrictMode } from '../../React-project1/task_app/node_modules/@types/react/index.js'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 // import './index.css'

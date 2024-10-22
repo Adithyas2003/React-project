@@ -34,16 +34,16 @@
 
 // export default App
 
-import React from "../../React-project1/task_app/node_modules/@types/react";
-import TaskList from "./Component/TaskList";
-// import AddTask from './Component/AddTask';
+import React from "react";
+import TaskList from "./Component/TaskList.jsx";
+import AddTask from './Component/AddTask.jsx';
 
 function App(){
     return (
         <div className="App">
             <h1>Todo App</h1>
-            {/* <a href="./Component/AddTask">Add page</a> */}
-            {/* <AddTask/> */}
+            <a href="./Component/AddTask">Add page</a>
+            <AddTask/>
             <TaskList/>
         </div>
     );
